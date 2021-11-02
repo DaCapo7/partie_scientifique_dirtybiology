@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #d8dee9;
+  font-family: 'Poppins', sans-serif;
+  color: #2e3440;
+}
+
+header {
+  background: url("../img/logo.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  flex: 1;
+  clip-path: polygon(0 0, 100% 00%, 100% 80%, 0 100%, 0 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div {
+  font-size: 4vw;
+  text-align: center;
+  font-weight: bold;
+}
+
+section {
+  flex-direction: column;
+  display: flex;
+  margin: 4vw;
+}
+
+section h1 {
+  margin-bottom: 3vw;
+  font-size: 4vw;
+}
+
+.about h3 {
+  margin: 1vw 5vw;
+  margin-top: 4vw;
+  font-size: 3vw
+}
+
+.about p {
+  font-size: 1.5vw;
+  margin-left: 3vw;
+}
+
+.join .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join .card {
+  width: 50vw;
+  height: 20vh;
+  background-color: #3b4252;
+  border: #2e3440 1vw solid;
+  margin: 3vh 0;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 0 5px black;
+  transition: box-shadow 0.2s;
+}
+
+.join .card:hover {
+  box-shadow: 0 0 15px black;
+}
+
+
+.join .card span:nth-child(1) {
+  height: 18vh;
+  width: 18vh;
+
+  margin: 0 2vw;
+
+}
+
+.join .card span:nth-child(2) {
+  color: #d8dee9;
+  width: calc(50vw - 20vh);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.join .card:nth-child(1) span:nth-child(1) {
+  background: url("../img/discord.png") no-repeat;
+  background-size: contain;
+}
+
+.join .card:nth-child(2) span:nth-child(1) {
+  background: url("../img/dirtybiology.jpg") no-repeat;
+  border-radius: 50%;
+  background-size: contain;
+}
+
+.join .card:nth-child(3) span:nth-child(1) {
+  background: url("../img/reddit.png") no-repeat;
+  background-size: contain;
+}
